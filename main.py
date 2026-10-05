@@ -26,14 +26,10 @@ students = [
         "course": "Artificial Intelligence"
     }
 ]
-
-
 class Student(BaseModel):
     name: str
     email: str
     course: str
-
-
 @app.get("/")
 def root():
     return {"message": "Student Management API is running"}
